@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Chem-Haz Prognoza</string>
+    <string name="dod">Dodaj</string>
+    <string name="edit">Edytuj</string>
+    <string name="delete">Usuń</string>
+    <string name="gases">Gazy</string>
+    <string name="liq">Ciecze</string>
+    <string name="gc">Gazów</string>
+    <string name="todo">TODO</string>
+    <string name="insert_gas_name">Podaj nazwę gazu</string>
+    <string name="insert_liq_name">Podaj nazwę cieczy</string>
+    <string name="insert_M_number">Podaj liczbę masową [g/mol]</string>
+    <string name="insert_cp_number">Podaj ciepło właściwe Cp [J/(mol·K)]</string>
+    <string name="insert_cv_number">Podaj Ciepło właściwe Cv [J/(mol·K)]</string>
+    <string name="spinner_title">Czynnik</string>
+    <string name="spinner_head">Wybierz gaz</string>
+    <string name="spinner_temp">Podaj temperaturę gazu:\t</string>
+    <string name="spinner_ad">Podaj średnicę otworu:\t</string>
+    <string name="spinner_p">Podaj ciśnienie w zbiorniku:</string>
+    <string name="spinner_pa">Podaj ciśnienie atmosferyczne:</string>
+    <string name="unit_T">[K]\t</string>
+    <string name="unit_Ro">[kg/m&#179;]</string>
+    <string name="unit_ah">[m&#178;]</string>
+    <string name="unit_p">[Pa]</string>
+    <string name="dalej">Dalej</string>
+    <string name="dzie">Dzień</string>
+    <string name="noc">Noc</string>
+    <string name="select_time">Podaj godzinę</string>
+    <string name="select_date">Podaj datę</string>
+    <string name="desc_wind">Podaj siłę wiatru:</string>
+    <string name="desc_nd">Podaj porę</string>
+    <string name="unit_wind">[m/s]</string>
+    <string name="desc_chm">Podaj zachmuerzenie w oktanach:</string>
+    <string name="miasto">miasto</string>
+    <string name="wies">wieś</string>
+    <string name="wybierz_obszar_zdarzenia">Wybierz obszar zdarzenia</string>
+    <string name="koordynaty_geo">Wprowadź współrzędne geograficzne</string>
+    <string name="szer">ϕ:\t</string>
+    <string name="stopnie">°\t</string>
+    <string name="minuta">\'\t</string>
+    <string name="sekunda">\'\'\t</string>
+    <string name="alfa">λ:\t</string>
+    <string name="wczyt_geo">Wczytaj aktualną pozycję</string>
+    <string name="oblicz">Oblicz</string>
+    <string name="STG">Podaj wartości graniczne PAC:</string>
+    <string name="unitSTG">[mg/m&#179;]\t</string>
+    <string name="backStr">Wróć do menu</string>
+    <string name="mapStr">Wyświetl mapę</string>
+
+    <string-array name="clouds_arrays">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="dl_arrays">
+        <item>N</item>
+        <item>S</item>
+    </string-array>
+
+    <string-array name="sz_arrays">
+        <item>E</item>
+        <item>W</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="lp_calc">Cieczy parujących</string>
+    <string name="lb_calc">Cieczy wrzących</string>
+    <string name="intrukcja">Intrukcja</string>
+    <string name="wybierz_ciecz">Wybierz ciecz</string>
+    <string name="wsp_kin">Współczynnik lepkości kinematycznej:</string>
+    <string name="sr_roz">Podaj średnicę rozlewiska</string>
+    <string name="prez_temp">Podaj temperaturę na powierzchni cieczy oraz prężność par odpowiadającą podanej temperaturze:</string>
+    <string name="Tb_ciecz">Podaj temperaturę:\t</string>
+    <string name="metr">[m]</string>
+    <string name="wys_ciecz">Podaj wysokość słupa cieczy:</string>
+    <string name="par_unit">[kJ/Kg]</string>
+    <string name="podaj_tic">Podaj temperaturę wrzenia oraz ciepło parowania dla podanego ciśnienia:</string>
+    <string name="fact">Baza czynników:</string>
+    <string name="instrukcja">Instrukcja:</string>
+    <string name="przeprowad_prognoz">Przeprowadź prognozę</string>
+    <string name="pdl">Prognoza dla:</string>
+    <string name="wczyt_map">Wczytaj pozaycję z mapy</string>
+    <string name="insTresc">
+\t\t\tPrzycisk PRZEPROWADŹ PROGNOZĘ otwiera panel umożliwiający wybór rodzaju zagrożenia dla jakiego chcemy przeprowadzić prognozę. Program zapewnia możliwość przeprowadzenia prognozy zasięgu strefy zagrożenia toksycznego dla GAZÓW, CIECZY WRZĄCYCH oraz CIECZY PARUJĄCYCH. Po wybraniu jednej z tych trzech opcji zostaje wyświetlone okno, w którym należy wybrać medium mające udział w zdarzeniu, a w jeszcze następnym podać parametry jego emisji. W kolejnym oknie należy wprowadzić czas zdarzenia , warunki meteorologiczne oraz jego koordynaty geograficzne. Istnieje możliwość wczytania aktualnych współrzędnych poprzez moduł GPS, lub wybór punktu z mapy. W ostatnim oknie poprzedzającym wyświetlanie wyników należy zatwierdzić albo wprowadzić wartość graniczne parametrów PAC lub odpowiadających im stężeń. Po uzupełnieniu wszystkich niezbędnych danych należy wybrać przycisk OBLICZ.\n\n
+
+        \t\t\tW zakładkach GAZY oraz CIECZE znajdują się edytowalne listy zawierające ich nazwy oraz parametry. Wiszący w prawym dolnym rogu ekranu przycisk
+        otwiera panel umożliwiający dodawanie czynników. Natomiast aby dokonać edycji wybranego czynnika należy wybrać go z listy.
+        Celem dodania gazu należy wprowadzić jego nazwę, liczbę masową oraz wartości ciepła właściwego Cp oraz Cv.
+        Natomiast podczas dodawania cieczy należy wprowadzić jej nazwę, liczbę masową oraz wartość ciepła właściwego Cp. Istnieje również możliwość wpisania domylślnych wartość parametrów PAC dla wybranego medium.\n\n
+        \t\t\tZasięgi strefy niebezpiecznej dla trzech wartości wskaźników PAC są wyznaczane za pomocą modelu Gaussa. Klasa stabilności atmosfery wg. Pasquilla wyznaczana jest za pomocą algorytmu IMGW. Natomiast wydajność źródła wypływu została obliczona za pomocą wzorów z teoretycznych podstaw Ratownictwa Chemicznego i Ekologicznego.\n\n
+        \t\t\tW oknie wyników wyświetlona zostaje wydajność źródła wypływu, klasa stabilności atmosfery oraz zasięgi strefy niebezpiecznej. Poniżej znajdują się przyciski umożliwiające wyświetlenie mapy wraz z zaznaczonym zasięgiem strefy niebezpiecznej oraz powrót do startowego okna aplikacji.
+</string>
+    <string name="lubGest">lub jego gęstość:</string>
+    <string name="lubAh">lub jego powierzchnię:</string>
+    <string name="ciecz_Rb">Podaj gęstość cieczy:</string>
+    <string name="molek">Współczynnik dyfuzji molekularnej:</string>
+    <string name="pac1_string">Podaj parametr Pac1 [ppm]</string>
+    <string name="pac2_string">Podaj parametr Pac2 [ppm]</string>
+    <string name="pac3_string">Podaj parametr Pac3 [ppm]</string>
+    <string name="pac1">PAC1:</string>
+    <string name="ppm">[ppm]</string>
+    <string name="pac2">PAC2:</string>
+    <string name="pac3">PAC3:</string>
+
+</resources>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".stclass"
+    tools:ignore="LabelFor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/in_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/in_date"
+            android:layout_toEndOf="@+id/in_date"
+            android:text="@string/select_date" />
+
+        <EditText
+            android:id="@+id/in_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_date"
+            android:layout_alignParentStart="true"
+            android:focusable="false"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_date"
+            android:layout_alignStart="@+id/btn_date"
+            android:text="@string/select_time" />
+
+        <TextView
+            android:id="@+id/textH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="125dp"
+            android:gravity="center"
+            android:text="@string/desc_chm"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerOkt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:entries="@array/clouds_arrays"
+            android:prompt="@string/desc_chm" />
+
+        <TextView
+            android:id="@+id/textP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:text="@string/desc_wind"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editWind"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textPun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_toRightOf="@id/editWind"
+            android:text="@string/unit_wind"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textMw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:text="@string/wybierz_obszar_zdarzenia"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/mwRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="335dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/miasto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/miasto" />
+
+            <RadioButton
+                android:id="@+id/wies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wies" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textGeo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:text="@string/koordynaty_geo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textSzGeo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:text="@string/szer"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editSzSt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textSzSt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:text="@string/stopnie"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editSzMin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textSzMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:text="@string/minuta"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editSzSek"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textSzSek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:text="@string/sekunda"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:entries="@array/dl_arrays" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textDlGeo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:text="@string/alfa"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editDlSt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textDlSt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:text="@string/stopnie"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editDlMin"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textDlMin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="460dp"
+                android:text="@string/minuta"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editDlSek"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textDlSek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:text="@string/sekunda"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinnerDl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:entries="@array/sz_arrays" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/geoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="520dp"
+            android:text="@string/wczyt_geo" />
+
+        <Button
+            android:id="@+id/inCoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="580dp"
+            android:text="@string/wczyt_map" />
+
+        <Button
+            android:id="@+id/stDbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="650dp"
+            android:text="@string/dalej" />
+
+    </RelativeLayout>
+</ScrollView>
